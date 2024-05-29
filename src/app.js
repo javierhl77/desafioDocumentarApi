@@ -139,12 +139,14 @@ const swaggerOptions = {
             description: "Api para gestionar productos"
         }
     },
-    apis: ["./docs/**/*.yaml"]
+    apis: ["./src/docs/**/*.yaml"]
 }
 //conectamos Swagger con el servidor express:
 const specs = swaggerJSDoc(swaggerOptions);
 
 app.use("/apidocs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
+////////////////////////////////////////////////////////////////////////////////////
+
 
 //pasos para trabajar con sockets.io
 // 1) instalar socket.io : npm install socket.io

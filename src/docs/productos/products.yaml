@@ -2,11 +2,11 @@ paths:
   /api/products:
     get:
      summary: obtenemos todos los productos de la base de datos
-    tags:
+     tags:
       - Productos
-  responses :
-    "200":
-      description: se obtienen todos los productos
-    "500":
-      description: error interno del servidor
+    responses :
+      "200":
+        description: se obtienen todos los productos
+      "500":
+        description: error interno del servidor
   
